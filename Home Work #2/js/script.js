@@ -342,24 +342,17 @@ while (true) {
 
 
 // #11 
-fizzobuzz:
 for (let i = 1; i <= 50; i++) {
-	for (let j = 1; j <= 50; j++) {
 		if (i % 3 === 0 && i % 5 === 0) {
 			console.log('FizzBuzz');
-			break;
 		} else if (i % 3 === 0) {
 			console.log('Fizz');
-			break;
 		} else if (i % 5 === 0) {
 			console.log('Buzz');
-			break;
 		}
 		else {
 			console.log(i);
-			continue fizzobuzz;
 		}
-	}
 }
 
 
