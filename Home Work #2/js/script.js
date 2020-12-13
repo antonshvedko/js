@@ -326,9 +326,9 @@ while (true) {
 	if ((checkPassword !== password)) {
 		checkPassword = prompt('Your Password');
 		if (checkPassword === null) {
-			let question = confirm('Вы уверенны что хотите отменить вторизацию ?');
+			let question = confirm('Вы уверенны что хотите отменить авторизацию ?');
 			if (question === true) {
-				alert('Вы отменили регистрацию');
+				alert('Вы отменили авторизацию');
 				break;
 			} else {
 				continue success;
