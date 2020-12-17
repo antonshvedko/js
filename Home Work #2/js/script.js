@@ -278,7 +278,7 @@ for (let i = 0; ; i++) {
 
 
 // #6 
-for (i = 0; ; i++) {
+for (i = 1; ; i++) {
 	let mathRandom = Math.random();
 	if (mathRandom > 0.9) {
 		alert(`Число которое прервало ${mathRandom}; Кол-во итераций ${i}`);
@@ -288,20 +288,16 @@ for (i = 0; ; i++) {
 
 
 //#7
-for (let p = 2; p <= 9; p++) {
-	for (let q = 2; q <= 9; q++) {
+for (let p = 1; p <= 10; p++) {
+	for (let q = 1; q <= 10; q++) {
 		console.log(`${p} * ${q} = ${p * q}`);
 	}
 }
 
 
 // #8
-for (let i = 0, x = 1, y = 1; i <= 60; i++, x = y - x, y = y + x) {
-	if (i === 2) {
-		console.log(x);
-	} else {
-		console.log(x);
-	}
+for (let i = 0, x = 0, y = 1; i <= 10; i++, x = y - x, y = y + x) {
+	console.log(x);
 }
 
 
