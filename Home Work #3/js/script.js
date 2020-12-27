@@ -75,7 +75,7 @@ let person = {
 let myValue = prompt("Cвойство");
 
 if (!!(myValue in person)) {
-	console.log(myValue);
+	console.log(`${myValue}: ${myValue[person]}`);
 } else {
 	console.log(`Свойство ${myValue} не найдено в объекте`);
 	person[myValue] = prompt(`Введите значение свойства ${myValue}`);

@@ -192,7 +192,7 @@ if (month >= 8 && month <= 10) {
 
 
 // // #12
-// // Терный 
+// // Тернaрный 
 // let firstName = prompt();
 // let age = +prompt();
 
