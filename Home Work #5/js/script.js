@@ -146,9 +146,7 @@ let concat = (firstName, lastName, sym) => {
     console.log(`${firstName} ${sym} ${lastName}`);
 }
 
-let hello = (yourName) => {
-    concat.bind(null)('Hello', yourName, '');
-}
+let hello = concat.bind(null, 'Hello', '');
 
 hello('World');
 hello('John');
