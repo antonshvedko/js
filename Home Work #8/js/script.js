@@ -1,8 +1,20 @@
-let el = document.querySelector('h2');
+let h2 = document.createElement("h2");
+document.querySelector("body").appendChild(h2);
+h2.textContent = '00:00:00';
+
+let startBtn = document.createElement("button");
+document.querySelector("body").appendChild(startBtn);
+startBtn.textContent = "start";
+startBtn.classList.add("start");
+
+let stopBtn = document.createElement("button");
+document.querySelector("body").appendChild(stopBtn);
+stopBtn.textContent = "stop";
+stopBtn.classList.add("stop");
 
 let clock = () => {
     let theBigDay = new Date(),
-	    hours = theBigDay.getHours(), 
+        hours = theBigDay.getHours(), 
         min = theBigDay.getMinutes(),
         sec = theBigDay.getSeconds();
 
@@ -14,7 +26,7 @@ let clock = () => {
             sec = '0' + sec;
         }
 
-    el.innerHTML = `${hours}:${min}:${sec}`;
+    h2.textContent = `${hours}:${min}:${sec}`;
 }
 
 let dfaultСlock = setInterval(clock, 1000);
