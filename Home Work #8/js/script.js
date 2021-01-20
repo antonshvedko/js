@@ -12,11 +12,11 @@ document.querySelector("body").appendChild(stopBtn);
 stopBtn.textContent = "stop";
 stopBtn.classList.add("stop");
 
-let clock = () => {
-    let theBigDay = new Date(),
-        hours = theBigDay.getHours(), 
-        min = theBigDay.getMinutes(),
-        sec = theBigDay.getSeconds();
+let getNowTime = () => {
+    let nowTime = new Date(),
+        hours = nowTime.getHours(), 
+        min = nowTime.getMinutes(),
+        sec = nowTime.getSeconds();
 
         if (hours <= 9) {
             hours = '0' + hours;
@@ -29,10 +29,10 @@ let clock = () => {
     h2.textContent = `${hours}:${min}:${sec}`;
 }
 
-let dfaultСlock = setInterval(clock, 1000);
+let dfaultСlock = setInterval(getNowTime, 1000);
 
 let stopClock = document.querySelector('.stop');
 stopClock.addEventListener("click", () => clearInterval(dfaultСlock));
 
 let startClock = document.querySelector('.start');
-startClock.addEventListener("click", () => {dfaultСlock = setInterval(clock, 1000);});
+startClock.addEventListener("click", () => {dfaultСlock = setInterval(getNowTime, 1000);});
