@@ -21,5 +21,5 @@ document.addEventListener("mousemove", (event) => {
 });
 
 document.querySelector('div').addEventListener("mousemove", (event) => {
-    p2.textContent = `Regarding div - X: ${event.pageX} Y: ${event.pageY}`;
+    p2.textContent = `Regarding div - X: ${event.offsetX} Y: ${event.offsetY}`;
 })
