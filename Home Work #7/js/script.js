@@ -24,12 +24,12 @@ class Line extends Figure {
 }
 
 
-class Rect extends Figure  {
-	constructor (x, y, width, height, color) {
-	super(x, y, color);
+class Rect extends Figure {
+	constructor(x, y, width, height, color) {
+		super(x, y, color);
 
-	this.w = width;
-	this.h = height;
+		this.w = width;
+		this.h = height;
 	}
 
 	draw() {
@@ -41,11 +41,11 @@ class Rect extends Figure  {
 }
 
 class Circle extends Figure {
-	constructor (x, y, radius, color) {
-	super(x, y, color);
+	constructor(x, y, radius, color) {
+		super(x, y, color);
 
-	this.r = radius;
-}
+		this.r = radius;
+	}
 	draw() {
 		ctx.beginPath();
 		ctx.fillStyle = this.color;
@@ -54,13 +54,13 @@ class Circle extends Figure {
 	}
 }
 
-class Zigzag extends Figure   {
+class Zigzag extends Figure {
 	constructor(x, y, step, lineWidth, color) {
-	super(x, y, color);
-	this.x = x;
-	this.y = y;
-	this.step = step;
-	this.lineWidth = lineWidth;
+		super(x, y, color);
+		this.x = x;
+		this.y = y;
+		this.step = step;
+		this.lineWidth = lineWidth;
 	}
 	draw() {
 		ctx.beginPath();
@@ -81,9 +81,9 @@ let ctx;
 let canvas;
 
 class Canvas {
-	constructor (myId) {
-	canvas = document.getElementById(myId);
-	ctx = canvas.getContext("2d");
+	constructor(myId) {
+		canvas = document.getElementById(myId);
+		ctx = canvas.getContext("2d");
 	}
 	add(...arg) {
 		for (let i = 0; i < arg.length; i++) {
